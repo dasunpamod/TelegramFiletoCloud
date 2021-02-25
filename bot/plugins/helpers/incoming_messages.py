@@ -20,8 +20,8 @@ async def userVideo(client, bot):
     await client.send_message(
         chat_id=bot.chat.id,
         text=(
-            f"File Name: <code>{bot.video.file_name}</code>"
-            f"\nFile Size: <code>{size(bot.video.file_size)}</code>"
+            f"📂 File Name: <code>{bot.video.file_name}</code>"
+            f"\n👀 File Size: <code>{size(bot.video.file_size)}</code>"
         ),
         reply_markup=server_select(),
         reply_to_message_id=bot.message_id
@@ -34,8 +34,8 @@ async def userDocument(client, bot):
     await client.send_message(
         chat_id=bot.chat.id,
         text=(
-            f"File Name: <code>{bot.document.file_name}</code>"
-            f"\nFile Size: <code>{size(bot.document.file_size)}</code>"
+            f"📂 File Name: <code>{bot.document.file_name}</code>"
+            f"\n👀 File Size: <code>{size(bot.document.file_size)}</code>"
         ),
         reply_markup=server_select(),
         reply_to_message_id=bot.message_id
@@ -48,8 +48,8 @@ async def userAudio(client, bot):
     await client.send_message(
         chat_id=bot.chat.id,
         text=(
-            f"File Name: <code>{bot.audio.file_name}</code>"
-            f"\nFile Size: <code>{size(bot.audio.file_size)}</code>"
+            f"📂 File Name: <code>{bot.audio.file_name}</code>"
+            f"\n👀 File Size: <code>{size(bot.audio.file_size)}</code>"
         ),
         reply_markup=server_select(),
         reply_to_message_id=bot.message_id

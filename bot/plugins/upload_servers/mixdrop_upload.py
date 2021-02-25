@@ -54,23 +54,18 @@ async def mixFileup(file, client, bot, s_time):
             await client.send_message(
                 chat_id=bot.from_user.id,
                 text=(
-                    f"File Name: <code>{file_name}</code>"
-                    f"\nFile Size: <code>{file_size}</code>"
+                    f"📂 File Name: <code>{file_name}</code>"
+                    f"\n👀 File Size: <code>{file_size}</code>"
                 ),
                 reply_markup=InlineKeyboardMarkup(
-                    [[
+                    [
                         InlineKeyboardButton(
                             "DOWNLOAD URL",
                             url=f"{dl_b}"
-                        )
-                    ],
-                        [
-                            InlineKeyboardButton(
-                                "🗂 SOURCE",
-                                url="https://github.com/Abhijith-cloud/"
-                            )
-                        ]])
+                        )       
+                    ]
             )
     except FloodWait as e:
         LOGGER.info(f"FILE UPLOAD ERROR: {e}")
         print(time.sleep(e.x))
+

@@ -15,11 +15,11 @@ def server_select():
         [
             InlineKeyboardButton(
                 "MixDrop",
-                callback_data="MixDrop"
+                callback_data="☘️ MixDrop"
             ),
             InlineKeyboardButton(
                 "File.io",
-                callback_data="File.io"
+                callback_data="☘️ File.io"
             )
         ],
     ]
